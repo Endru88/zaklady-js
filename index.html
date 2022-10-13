@@ -10,7 +10,8 @@
   /* Bootstrap CSS */
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-</head>
+    <script src="demo.js"></script>
+  </head>
 
 <body>
   <header class="jumbotron jumbotron-fluid text-center bg-primary">
@@ -28,7 +29,11 @@
           </p>
         </blockquote>
         <div class="bg-info p-3">
-          <p>Zde bude řešení.</p>
+          <p><ul>
+            <li><a href="https://hexgl.bkcore.com/">HexGL</a></li>
+            <li><a href="http://ophog.bot.land/">Ophog </a></li>
+            <li><a href="http://www.cross-code.com/en/home">Cross Code</a></li>
+          </ul></p>
         </div>
       </div>
       <div class="col-sm-6 bg-secondary text-light p-5">
@@ -38,7 +43,12 @@
           <p class="text-warning">Použij angličtinu!</p>
         </blockquote>
         <div class="bg-info p-3">
-          <p>Zde bude řešení.</p>
+          <p><ol>
+            <li>Case Sensitive</li>
+            <li>Camel Case</li>
+            <li>Spacing for better reading.</li>
+            <li>Semicolons are recomended.</li>
+          </ol></p>
         </div>
       </div>
     </div>
@@ -61,6 +71,11 @@
               // 3. Vložit příkazy JS jako reakce na události (zastaralé)<br>
               &lt;button onclick="alert('Ahoj');"&gt;&lt;/button&gt;
             </code>
+            <script>console.log('Hello');</script>
+            <p>
+              <button onclick="alert('Ahoj');"></button>
+            </p>
+            
         </div>
       </div>
       <div class="col-sm-6 bg-secondary text-light p-5">
@@ -76,14 +91,14 @@
         </blockquote>
         <div class="bg-light p-3">
           <code>
-              let x = 0; // s přiřazením hodnoty<br />
-              let x; // bez přiřazení hodnoty<br />
-              let x = null; // ...<br />
-              ... // celé číslo (typ number)<br />
-              ... // reálné číslo (typ number)<br />
-              ... // zápis desetinného čísla pomocí exponentu<br />
-              ... // typ string<br />
-              let prestupny = false // ...<br />
+            let x = 0; // s přiřazením hodnoty<br />
+            let x; // bez přiřazení hodnoty<br />
+            let x = null; // podobné jako false<br />
+            let x = 2 // celé číslo (typ number)<br />
+            let x = 2.3 // reálné číslo (typ number)<br />
+            let x = x ** y // zápis desetinného čísla pomocí exponentu<br />
+            let vlakno = "vlakno vytvoreno" // typ string<br />
+            let prestupny = false // nepravda<br />
             </code>
         </div>
       </div>
@@ -108,23 +123,23 @@
             </code>
           <h4>Přiřazovací</h4>
           <code>
-              ...
-            </code>
+            =, +=, -=, /=, *=, %=, **=
+          </code>
           <h4>Logické</h4>
           <code>
-              ...
+            || , && , !
             </code>
           <h4>Porovnávací</h4>
           <code>
-              ...
+            ==, ===, !=, !==, <, >, <=, >=, ?
             </code>
           <h4>Bitové</h4>
           <code>
-              ...
+            &, ~, |, ^, <<, >>, >>>, 
             </code>
           <h4>Typové</h4>
           <code>
-              typeof (typ proměnné), instanceof (...)
+              typeof (typ proměnné), instanceof (návrat TRUE, if objekt je objekt)
             </code>
         </div>
       </div>
@@ -143,17 +158,17 @@
         <div class="bg-light text-danger p-3">
           <h4>alert()</h4>
           <code>
-              /* ... */<br />
+              /* pop up okno s hláškou */<br />
               alert('Nezadal jsi správné heslo!');
             </code>
           <h4>prompt()</h4>
           <code>
               /* Do proměnné password vloží heslo zadané uživatelem */<br />
-              ...
+              let password = prompt("Heslo:");
             </code>
           <h4>confirm()</h4>
           <code>
-              /* ... */<br />
+              /* Popup okno, s popiskem "Chceš přejít na stránku Sezna,.cz" Po kliknutí nás přesune na stránku Seznam. */<br/>
               if (confirm('Chceš přejít na stránky Seznam.cz?'))
               location.href='https://seznam.cz';
             </code>
